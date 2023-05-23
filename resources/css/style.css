@@ -1,0 +1,292 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, p, ol, ul{margin: 0; padding: 0;}
+ul,ol{list-style-type: none;}
+a{text-decoration: none; color: #28292b; font-weight: 300;}
+a:hover{color: #28292b;}
+
+h1,h2{
+    font-family: 'Fasthand', cursive;
+}
+
+.font{
+    font-family: 'Fasthand', cursive;
+}
+
+/* helper system */
+
+.bg-darkred{background-color: darkred;}
+.bg-grey{background-color: rgb(236, 236, 236);}
+.bg{border: 1px solid red;}
+
+.title-red{color: rgb(139, 0, 0);}
+
+
+.mb-6{margin-bottom: 6rem;}
+.mx-6{margin-right: 6rem; margin-left: 6rem;}
+.mt-6{margin-top: 6rem;}
+.mt-8{margin-top: 8rem;}
+.mt-10{margin-top: 10rem;}
+.mt-13{margin-top: 13rem;}
+.ml-4{margin-left: 4rem;}
+.ml-3{margin-left: 3rem;}
+.ml-2{margin-left: 2rem;}
+.ml-1{margin-left: 1.7rem;}
+.ml-15{margin-left: 16rem;}
+.fs-0{font-size: 1.4rem;}
+.fs-9{font-size: 6rem;}
+.fs-8{font-size: 5rem;}
+.fs-7{font-size: 4rem;}
+.mx-10{margin-left: 65rem; margin-right: 3rem;}
+.mx-9{margin-left: 25rem; margin-right: 25rem;}
+.ls-2{letter-spacing: 0.2rem;}
+
+/* add */
+
+/* navbar */
+.navbar-collapse{
+    transition: 0.8s;
+}
+
+li .link-nav::after{
+   content: '';
+   width: 0;
+   height: 2px;
+   background-color: #fff;
+   margin: auto;
+   display: block;
+}
+
+li .link-nav:hover::after{
+    width: 100%;
+    transition: width 0.33s linear;
+}
+
+li .link-nav:hover{
+    color: #fff;
+}
+
+.bg-custom2{
+    background-image: url(/public/media/sfondo.jpg);
+    background-size: cover;
+}
+
+.img-nav{
+    height: 40px;
+    width: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .text-nav{
+        color: #333 !important;
+        border-bottom: 1px solid #c6c7c8;
+        width: 100%;
+    }
+}
+
+/* header */
+
+.header{
+    height: 100vh;
+    background-image: url(/public/media/piatto.png), url(/public/media/sfondo.jpg);
+    background-size: 65rem, cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.header-sma{
+    height: 80vh;
+    background-image: url(/public/media/piatto.png), url(/public/media/sfondo.jpg);
+    background-size: 40rem, cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    filter: invert(1);
+}
+
+.btn-custom{
+    border-radius: 20px;
+    padding: 5px 30px;
+    font-weight: bold;
+}
+
+.btn-custom1{
+    border-radius: 20px;
+    padding: 5px 30px;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-custom1:hover{
+    background-color: #c6c7c8;
+    color: #000;
+}
+
+.form-custom{
+    border-radius: 20px;
+    position: relative;
+}
+
+.bi-custom{
+    position: absolute;
+    font-size: 20px;
+}
+
+.card-shadow{
+    box-shadow: 10px 10px 5px #eee;
+}
+
+.bg-custom{
+    background-color: #28292b;
+    height: 70vh;
+}
+
+.bg-custom-sma{
+    background-color: #28292b;
+}
+
+.bg-custom1{
+    background-color: #28292b;
+    height: 60vh;
+}
+
+.bg-custom1-sma{
+    background-color: #28292b;
+    height: 80vh;
+}
+
+.header1{
+    height: 60vh;
+    background-image: url(/public/media/sfondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    box-shadow: 20px 20px 10px #c6c7c8;
+}
+
+.header1-sma{
+    height: 100vh;
+    background-image: url(/public/media/sfondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    box-shadow: 20px 20px 10px #c6c7c8;
+}
+
+.c-custom{
+    height: 80vh;
+    background-image: url(/public/media/sfondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    box-shadow: 20px 20px 10px #c6c7c8;
+}
+
+.img-custom-sma{
+    height: 87vh;
+    background-image: url(/public/media/pizza-01.png);
+    background-size: 30rem, cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.img-custom{
+    background-image: url(/public/media/pizza-00.png);
+    height: 72vh;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.btn-custom2{
+    text-transform: uppercase;
+    background-color: #333;
+    border-color: #fff;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.btn-custom2:hover{
+    border-color: #fff;
+    background-color: #4f5252;
+    color: #fff;
+}
+
+
+.form-control1{
+    border-radius: 20px;
+    border: 1px solid #ced4da;
+    width: 25%;
+    padding: 0.5rem 1rem;
+}
+
+.form-control1-sma{
+    border-radius: 20px;
+    border: 1px solid #ced4da;
+    width: 50%;
+    padding: 0.5rem 1rem;
+}
+
+.footer{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.icons{
+    color: #28292b;
+}
+
+.bi-custom1:hover{
+    padding: 5px 6px;
+    border-radius: 100px;
+    border-style: hidden;
+    background-color: #28292b;
+    color: #fff;
+}
+
+.link{
+    color: #28292b; 
+    font-weight: 300;
+}
+
+.link:hover{
+    background-color: #28292b;
+    color: #fff;
+    padding: 5px 6px;
+    border-radius: 100px;
+    border-style: hidden;
+}
+
+
+/* read more sma */
+
+#check{ display: none;}
+.content{display: none;}
+
+label{
+    display: inline-block;
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#check:checked ~ .content{
+    display: block;
+}
+
+#check:checked ~ label{visibility: hidden;}
+
+#check:checked ~ label::after{
+    content: 'Mostra meno';
+    display: block;
+    visibility: visible;
+}
